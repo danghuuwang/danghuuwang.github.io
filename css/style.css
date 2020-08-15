@@ -12,6 +12,7 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+  transition: 01s ease;
 }
 
 @font-face {
@@ -28,6 +29,7 @@ h4,
 h5,
 h6 {
   color: #1e1e1e;
+  transition: 01s ease;
 }
 
 a {
@@ -43,18 +45,22 @@ a:hover {
 
 .p-r {
   position: relative;
+  transition: 01s ease;
 }
 
 .color-a {
   color: #242526;
+  transition: 01s ease;
 }
 
 .color-d {
   color: #f5f5f5;
+  transition: 01s ease;
 }
 
 .color-text-a {
   color: #4e4e4e;
+  transition: 01s ease;
 }
 
 .box-shadow,
@@ -217,6 +223,7 @@ a:hover {
   margin: 3rem 0;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 01s ease;
 }
 
 /*------/ Socials /------*/
@@ -594,6 +601,8 @@ a:hover {
 
 .navbar-b.navbar-reduce .navbar-brand {
   color: #242526;
+  transition: 01s ease;
+  transition: 01s ease;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -606,6 +615,7 @@ a:hover {
   color: #242526;
   font-size: 2rem;
   font-weight: 600;
+  transition: 01s ease;
 }
 
 .navbar-collapse ul{
@@ -703,6 +713,7 @@ a:hover {
   height: 100vh;
   position: relative;
   color: #242526;
+  transition: 0.5s ease;
 }
 
 .intro .intro-content {
@@ -1236,7 +1247,7 @@ footer .credits a {
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 05px;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
   border: 1px solid transparent;
   transition: all 300ms ease;
   cursor: pointer;
@@ -1364,19 +1375,36 @@ footer .credits a {
   }
 }
 
+.covid{
+  margin-top: 250px;
+}
+
+.about-mf,
+.services-mf,
+.portfolio-mf{
+  transition: 01s ease;
+}
+
 /* ----------------------------------------------------------- */
 /* DARKMODE */
 /* ----------------------------------------------------------- */
 
-.dark .intro,
+.dark .intro{
+  background-color: #181818;
+  transition: 0.5s ease;
+}
+
+
 .dark .about-mf,
 .dark .services-mf,
 .dark .portfolio-mf{
   background-color: #181818;
+  transition: 1s ease;
 }
 
 .dark .box-shadow-full{
   background-color: #202020;
+  transition: 01s ease;
 }
 
 
@@ -1397,6 +1425,7 @@ footer .credits a {
 .dark .nav-item .nav-link,
 .dark .navbar-b.navbar-reduce .navbar-brand{
   color: #e1e1e1;
+  transition: 01s ease;
 }
 
 .dark .bg-image1{
@@ -1527,5 +1556,13 @@ footer .credits a {
 }
 
 .dark .work-content{
+  background-color: #202020;
+}
+
+/* ----------------------------------------------------------- */
+/* CORONA BUTTON */
+/* ----------------------------------------------------------- */
+
+.dark .modal-content{
   background-color: #202020;
 }
