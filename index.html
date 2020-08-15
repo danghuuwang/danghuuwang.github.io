@@ -81,6 +81,11 @@
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="intro-title mb-4">I am Wang</h1>
           <p class="intro-subtitle"><span class="text-slider-items">Web Designer,Video Editor,Graphic Designer,Content Creator</span><strong class="text-slider"></strong></p>
+          <div class="covid">
+            <button type="button" class="btn btn-fill" data-toggle="modal" data-target="#exampleModal">
+              vietnam covid-19 analytics
+            </button>
+          </div>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -573,7 +578,25 @@
       }
   </script>
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Vietnam Coronavirus (COVID-19) statistics</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="bingwidget" data-type="covid19_stats" data-market="en-us" data-language="en-us" data-location-id="/Vietnam"></div>
+            <script src="//www.bing.com/widget/bootstrap.answer.js" async=""></script>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-fill" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </body>
 </html>
