@@ -13,6 +13,7 @@ body {
   background-color: #f5f5f5;
   color: #4e4e4e;
   transition: 01s ease;
+  cursor: url('../mouse/normal-select-blue.cur'), auto;
 }
 
 @font-face {
