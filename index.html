@@ -60,9 +60,13 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="index-vi.html">vietnamese</a>
-          </li>
+          <div class="dropdown dropleft float-right">
+            <button type="button" class="dropbtn" data-toggle="dropdown" ><ion-icon name="language"></ion-icon></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="index.html">English</a>
+              <a class="dropdown-item" href="index-vi.html">Vietnamese</a>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
@@ -3411,6 +3415,11 @@
                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
                       aria-valuemax="100"></div>
                   </div>
+                  <span>ADOBE ILLUSTRATOR</span> <span class="pull-right">30%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
                   <span>PYTHON</span> <span class="pull-right">30%</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
@@ -3439,7 +3448,7 @@
                   <p class="lead">
                     For more details, please check out my résumé.
                   </p>
-                  <a href="https://drive.google.com/file/d/1xzmGiz2pyexhhqNePoopZAVDF_sCqGwU/view?usp=sharing" class="btn btn-fill" target="_blank" download>MY RÉSUMÉ</a>
+                  <a href="img/cv.jpg" data-lightbox="gallery-mf" class="btn btn-fill" target="_blank" download>MY RÉSUMÉ</a>
                 </div>
               </div>
             </div>
@@ -3508,8 +3517,7 @@
   </section>
   <!--/ Section Services End /-->
 
-  <div class="section-counter paralax-mf bg-image">
-    <video class="office-video" autoplay muted loop src="img/office.mp4" autoplay poster="office.jpg"></video>
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/office.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
