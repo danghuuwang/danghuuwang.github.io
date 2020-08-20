@@ -1478,6 +1478,14 @@ footer .credits a {
 /* DARKMODE */
 /* ----------------------------------------------------------- */
 
+.dark .firstiso{
+  visibility: hidden;
+}
+
+.dark .secondiso{
+  visibility: visible;
+}
+
 .dark .intro{
   transition: 0.5s ease;
 }
@@ -1521,7 +1529,7 @@ footer .credits a {
 }
 
 .dark .bg-image1{
-  background-image: url('../img/intro-bgd.jpg');
+  background-image: url('../img/intro-bgd-vi.jpg');
 }
 
 .dark .bg-image2{
@@ -1672,7 +1680,7 @@ footer .credits a {
 /* -----------------ISOMETRIC---------------------------- */
 
 .st0{opacity:0.2;fill:#202020;}
-.st1{fill:#FFFFFF;}
+.st1{fill:#4d4d4d;}
 .st2{fill:#4D4D4D;}
 .st3{fill:#E1E1E1;}
 .st4{fill:url(#SVGID_1_);}
@@ -1680,11 +1688,11 @@ footer .credits a {
 .st7{opacity:0.2;}
 .st16{fill:#858585;}
 .st17{fill:#FDFDFD;}
-.st18{fill:#D2D2D2;}
+.st18{fill:#fff;}
 .st19{fill:#8B8B8B;}
 .st20{fill:#EEEEEE;}
 
-svg{
+.firstiso{
   width: 600px;
   margin: 0px 0px;
 }
@@ -2031,6 +2039,443 @@ svg #creator{
   opacity: 0;
 }
 @keyframes editor{
+  0%  {
+    transform: translateX(0px) translateY(0px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(0px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+/* -----------------ISOMETRIC 2---------------------------- */
+/* -----------------ISOMETRIC 2---------------------------- */
+/* -----------------ISOMETRIC 2---------------------------- */
+
+.secondiso{
+  position: absolute;
+  top: -47px;
+  left: 176px;
+  width: 600px;
+  margin: 0px 0px;
+  visibility: hidden;
+}
+
+.std0{fill:#6F7178;}
+.std1{fill:#E4E9F8;}
+.std2{fill:#B5B9C5;}
+.std3{fill:#F4971F;}
+.std4{opacity:0.15;fill:#FFFFFF;}
+.std5{fill:#FCC640;}
+.std6{fill:#FFFFFF;}
+.std7{fill:url(#SVGID_1_);}
+.std8{fill:url(#SVGID_2_);}
+.std9{fill:url(#SVGID_3_);}
+.std10{fill:url(#SVGID_4_);}
+.std11{fill:url(#SVGID_5_);}
+.std12{fill:url(#SVGID_6_);}
+.std13{fill:#8B8B8B;}
+.std14{fill:url(#SVGID_7_);}
+.std15{fill:url(#SVGID_8_);}
+.std16{fill:url(#SVGID_9_);}
+.std17{fill:url(#SVGID_10_);}
+.std18{fill:url(#SVGID_11_);}
+.std19{fill:url(#SVGID_12_);}
+.std20{fill:url(#SVGID_13_);}
+.std21{fill:url(#SVGID_14_);}
+.std22{fill:url(#SVGID_15_);}
+.std23{fill:url(#SVGID_16_);}
+.std24{fill:url(#SVGID_17_);}
+.std25{fill:url(#SVGID_18_);}
+.std26{fill:url(#SVGID_19_);}
+.std27{fill:url(#SVGID_20_);}
+.std28{fill:url(#SVGID_21_);}
+.std29{fill:url(#SVGID_22_);}
+.std30{fill:url(#SVGID_23_);}
+.std31{fill:url(#SVGID_24_);}
+.std32{fill:url(#SVGID_25_);}
+.std33{opacity:0.33;fill:#202020;}
+.std34{fill:url(#SVGID_26_);}
+.std35{fill:#E1E1E1;}
+.std36{fill:url(#SVGID_27_);}
+.std37{fill:url(#SVGID_28_);}
+.std38{fill:#FEFEFE;}
+.std40{opacity:0.15;}
+.std49{fill:url(#SVGID_29_);}
+.std50{fill:url(#SVGID_30_);}
+.std51{fill:url(#SVGID_31_);}
+.std52{fill:#707070;}
+.std53{fill:#858585;}
+.std54{fill:url(#SVGID_32_);}
+.std55{fill:url(#SVGID_33_);}
+.std56{fill:url(#SVGID_34_);}
+.std57{fill:url(#SVGID_35_);}
+.std58{fill:#FFF9FF;}
+.std59{fill:#D3BAE7;}
+.std60{fill:#752939;}
+.std61{fill:#BCBACE;}
+.std62{fill:#1A685A;}
+.std63{fill:#409682;}
+.std64{fill:#4EAF9D;}
+
+svg{
+  width: 700px;
+  margin: 250px 750px;
+}
+/* ----------------------------NAME--------------------------- */
+/* ----------------------------NAME--------------------------- */
+svg #named{
+  animation-duration: 01s;
+  animation-name: named;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.2s
+}
+
+@keyframes named{
+  from{
+    transform: translateX(0px) translateY(0px);
+  }
+  to{
+    transform: translateX(12px) translateY(-12px);
+  }
+}
+/* ----------------------------NAME--------------------------- */
+
+
+/* ----------------------------PHONE-------------------------- */
+/* ----------------------------PHONE-------------------------- */
+svg #phoned{
+  animation-duration: 01s;
+  animation-name: phone;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes phoned{
+  from{
+    transform: translateX(0px) translateY(0px);
+  }
+  to{
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+/* ----------------------------PHONE-------------------------- */
+
+
+/* ----------------------------ICON--------------------------- */
+/* ----------------------------ICON--------------------------- */
+svg #icon1d{
+  animation-duration: 2s;
+  animation-name: icon1d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  fill: #e1e1e1;
+}
+@keyframes icon1d{
+  from{}
+  to{
+    fill: #ff4d4d;
+  }
+}
+
+svg #icon2d{
+  animation-duration: 2s;
+  animation-name: icon2d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.5s;
+  fill: #e1e1e1;
+}
+@keyframes icon2d{
+  from{}
+  to{
+    fill: #fffa65;
+  }
+}
+
+svg #icon3d{
+  animation-duration: 2s;
+  animation-name: icon3d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  fill: #e1e1e1;
+}
+@keyframes icon3d{
+  from{}
+  to{
+    fill: #18dcff;
+  }
+}
+
+svg #icon4d{
+  animation-duration: 2s;
+  animation-name: icon4d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1.5s;
+  fill: #e1e1e1;
+}
+@keyframes icon4d{
+  from{}
+  to{
+    fill: #CD84F1;
+  }
+}
+
+svg #icon5d{
+  animation-duration: 2s;
+  animation-name: icon5d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+  fill: #e1e1e1;
+}
+@keyframes icon5d{
+  from{}
+  to{
+    fill: #32FF7E;
+  }
+}
+
+svg #icon6d{
+  animation-duration: 2s;
+  animation-name: icon6d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2.5s;
+  fill: #e1e1e1;
+}
+@keyframes icon6d{
+  from{}
+  to{
+    fill: #FFAF40;
+  }
+}
+
+svg #icon7d{
+  animation-duration: 2s;
+  animation-name: icon7d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 3s;
+  fill: #e1e1e1;
+}
+@keyframes icon7d{
+  from{}
+  to{
+    fill: #FFCCCC;
+  }
+}
+
+svg #icon8d{
+  animation-duration: 2s;
+  animation-name: icon8d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 3.5s;
+  fill: #e1e1e1;
+}
+@keyframes icon8d{
+  from{}
+  to{
+    fill: #7D5FFF;
+  }
+}
+
+svg #icon9d{
+  animation-duration: 2s;
+  animation-name: icon9d;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 4s;
+  fill: #e1e1e1;
+}
+@keyframes icon9d{
+  from{}
+  to{
+    fill: #dcdcdc;
+  }
+}
+/* ----------------------------ICON--------------------------- */
+
+
+/* ----------------------------BUTTON------------------------- */
+/* ----------------------------BUTTON------------------------- */
+svg #designd{
+  animation-duration: 1s;
+  animation-name: designd;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+}
+@keyframes designd{
+  from{
+    transform: translateX(0px) translateY(0px);
+  }
+  to{
+    transform: translateX(20px) translateY(-20px);
+  }
+}
+
+svg #videod{
+  animation-duration: 1s;
+  animation-name: videod;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+}
+@keyframes videod{
+  from{
+    transform: translateX(0px) translateY(0px);
+  }
+  to{
+    transform: translateX(27px) translateY(-27px);
+  }
+}
+
+svg #webd{
+  animation-duration: 1s;
+  animation-name: webd;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.1s;
+}
+@keyframes webd{
+  from{
+    transform: translateX(0px) translateY(0px);
+  }
+  to{
+    transform: translateX(15px) translateY(-15px);
+  }
+}
+
+svg #idead{
+  animation-duration: 1s;
+  animation-name: idead;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.05s;
+}
+@keyframes idead{
+  from{
+    transform: translateX(0px) translateY(0px);
+  }
+  to{
+    transform: translateX(25px) translateY(-25px);
+  }
+}
+/* ----------------------------BUTTON------------------------- */
+
+
+/* -------------------------AUTOMATIC------------------------- */
+/* -------------------------AUTOMATIC------------------------- */
+
+svg #designerd{
+  animation-duration: 20s;
+  animation-name: designerd;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  opacity: 0;
+}
+@keyframes designerd{
+  0%  {
+    transform: translateX(0px) translateY(0px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(0px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+svg #editord{
+  animation-duration: 20s;
+  animation-name: editord;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  opacity: 0;
+}
+@keyframes editord{
+  0%  {
+    transform: translateX(0px) translateY(0px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(0px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+svg #web-desd{
+  animation-duration: 20s;
+  animation-name: web-desd;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  opacity: 0;
+}
+@keyframes web-desd{
+  0%  {
+    transform: translateX(0px) translateY(0px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0px) translateY(50px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(0px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+svg #creatord{
+  animation-duration: 20s;
+  animation-name: editord;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  opacity: 0;
+}
+@keyframes editord{
   0%  {
     transform: translateX(0px) translateY(0px);
   }
