@@ -93,8 +93,48 @@ a:hover {
   overflow: hidden;
 }
 
+.cloudsd{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.5 ease;
+}
+
+.cloudsd img{
+  position: absolute;
+  bottom: -100px;
+  max-width: 100%;
+  animation: cloudani calc(8s * var(--i)) linear infinite;
+  opacity: 0.5;
+}
+
+.clouds{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.clouds img{
+  position: absolute;
+  bottom: -100px;
+  max-width: 100%;
+  animation: cloudani calc(8s * var(--i)) linear infinite;
+}
+
+@keyframes cloudani {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(100%);}
+}
+
 .bg-image1 {
-  background-image: url('../img/intro-bg-vi.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 30%, #f5f5f5), url('../img/intro-bg-vi.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1494,11 +1534,12 @@ footer .credits a {
 .dark .services-mf,
 .dark .portfolio-mf{
   background-color: #181818;
-  transition: 01s ease;
+  transition: 0.5s ease;
 }
 
 .dark .box-shadow-full{
   background-color: #202020;
+  transition: 0.5s ease;
 }
 
 .dark .dropbtn{
@@ -1529,7 +1570,7 @@ footer .credits a {
 }
 
 .dark .bg-image1{
-  background-image: url('../img/intro-bgd-vi.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #181818), url('../img/intro-bgd-vi.jpg');
 }
 
 .dark .bg-image2{
@@ -1673,6 +1714,22 @@ footer .credits a {
 
 .dark .second-video{
   visibility: visible;
+}
+
+.dark .clouds{
+  visibility: hidden;
+}
+
+.dark .cloudsd{
+  visibility: visible;
+}
+
+.dark .social-iso{
+  background-color: #202020;
+}
+
+.dark .social-iso .social-color2{
+  fill: #181818;
 }
 
 /* -----------------ISOMETRIC---------------------------- */
@@ -1878,20 +1935,117 @@ svg #icon9{
 
 /* ----------------------------BUTTON------------------------- */
 /* ----------------------------BUTTON------------------------- */
+svg .design-scale{
+  animation-duration: 20s;
+  animation-name: design-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transform-origin: bottom;
+}
+@keyframes design-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #design .st17{
+  animation-duration: 20s;
+  animation-name: design-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes design-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #design #black_5_{
+  animation-duration: 20s;
+  animation-name: design-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes design-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
+}
+
 svg #design{
   animation-duration: 1s;
-  animation-name: design;
+  animation-name: design-translate;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: 0s;
 }
-@keyframes design{
+@keyframes design-translate{
   from{
     transform: translateX(0px) translateY(0px);
   }
   to{
     transform: translateX(20px) translateY(-20px);
   }
+}
+
+
+
+
+svg .video-scale{
+  animation-duration: 20s;
+  animation-name: video-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  transform-origin: bottom;
+}
+@keyframes video-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #video .st17{
+  animation-duration: 20s;
+  animation-name: video-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes video-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #video #black_6_{
+  animation-duration: 20s;
+  animation-name: video-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes video-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
 }
 
 svg #video{
@@ -1910,6 +2064,56 @@ svg #video{
   }
 }
 
+
+
+
+svg .web-scale{
+  animation-duration: 20s;
+  animation-name: web-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  transform-origin: bottom;
+}
+@keyframes web-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #web .st17{
+  animation-duration: 20s;
+  animation-name: web-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes web-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #web #black_8_{
+  animation-duration: 20s;
+  animation-name: web-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes web-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
+}
+
 svg #web{
   animation-duration: 1s;
   animation-name: web;
@@ -1924,6 +2128,56 @@ svg #web{
   to{
     transform: translateX(15px) translateY(-15px);
   }
+}
+
+
+
+
+svg .idea-scale{
+  animation-duration: 20s;
+  animation-name: idea-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  transform-origin: bottom;
+}
+@keyframes idea-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #idea .st17{
+  animation-duration: 20s;
+  animation-name: idea-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes idea-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #idea #black_7_{
+  animation-duration: 20s;
+  animation-name: idea-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes idea-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
 }
 
 svg #idea{
@@ -2315,20 +2569,117 @@ svg #icon9d{
 
 /* ----------------------------BUTTON------------------------- */
 /* ----------------------------BUTTON------------------------- */
+svg .designd-scale{
+  animation-duration: 20s;
+  animation-name: designd-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transform-origin: bottom;
+}
+@keyframes designd-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #designd .std6{
+  animation-duration: 20s;
+  animation-name: designd-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes designd-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #designd .std54, .std55{
+  animation-duration: 20s;
+  animation-name: designd-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes designd-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
+}
+
 svg #designd{
   animation-duration: 1s;
-  animation-name: designd;
+  animation-name: designd-translate;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: 0s;
 }
-@keyframes designd{
+@keyframes designd-translate{
   from{
     transform: translateX(0px) translateY(0px);
   }
   to{
     transform: translateX(20px) translateY(-20px);
   }
+}
+
+
+
+
+svg .videod-scale{
+  animation-duration: 20s;
+  animation-name: videod-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  transform-origin: bottom;
+}
+@keyframes videod-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #videod .std6{
+  animation-duration: 20s;
+  animation-name: videod-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes videod-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #videod .std56, .std57{
+  animation-duration: 20s;
+  animation-name: videod-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes videod-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
 }
 
 svg #videod{
@@ -2347,6 +2698,56 @@ svg #videod{
   }
 }
 
+
+
+
+svg .webd-scale{
+  animation-duration: 20s;
+  animation-name: webd-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  transform-origin: bottom;
+}
+@keyframes webd-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #webd .std6{
+  animation-duration: 20s;
+  animation-name: webd-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes webd-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #webd #trang_4_{
+  animation-duration: 20s;
+  animation-name: webd-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes webd-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
+}
+
 svg #webd{
   animation-duration: 1s;
   animation-name: webd;
@@ -2361,6 +2762,56 @@ svg #webd{
   to{
     transform: translateX(15px) translateY(-15px);
   }
+}
+
+
+
+
+svg .idead-scale{
+  animation-duration: 20s;
+  animation-name: idead-scale;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  transform-origin: bottom;
+}
+@keyframes idead-scale{
+  0% {transform: scale(1);}
+  5% {transform: scale(1.2);}
+  20% {transform: scale(1.2);}
+  25% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
+svg #idead .std6{
+  animation-duration: 20s;
+  animation-name: idead-fill-icon;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes idead-fill-icon{
+  0% {fill: #fff;}
+  5% {fill: black;}
+  20% {fill: black;}
+  25% {fill: #fff;}
+  100% {fill: #fff;}
+}
+
+svg #idead #trang_3_{
+  animation-duration: 20s;
+  animation-name: idead-fill-bg;
+  animation-iteration-count: infinite;
+  animation-delay: 17s;
+  transform-origin: bottom;
+  transition: 1s ease;
+}
+@keyframes idead-fill-bg{
+  0% {fill: black;}
+  5% {fill: #fff;}
+  20% {fill: #fff;}
+  25% {fill: black;}
+  100% {fill: black;}
 }
 
 svg #idead{
@@ -2493,5 +2944,292 @@ svg #creatord{
   }
   100% {
     transform: translateX(0px) translateY(0px);
+  }
+}
+
+/* -------------------------SOCIAL-ISOMETRIC----------------
+-------------------------SOCIAL-ISOMETRIC----------------
+-------------------------SOCIAL-ISOMETRIC---------------- */
+
+.social-iso{
+  width: 450px;
+  margin: 0px 0px;
+  background: #e1e1e1;
+  border-radius: 20px;
+}
+
+.social-svg{
+  width: 450px;
+  margin: 0px 0px;
+}
+
+.social-color0{display:none;}
+.social-color1{display:inline;fill:#E1E1E1;}
+.social-color2{fill:#A0A0A0;}
+.social-color3{fill:#A6D0F4;}
+.social-color4{fill:#FFFFFF;}
+.social-color5{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+.social-color6{fill:#1A3B5F;}
+.social-color7{fill:#2F6CAD;}
+.social-color8{fill:#FAFAFA;}
+.social-color9{opacity:0.53;}
+.social-color10{fill:#456E8B;}
+.social-color11{fill:#78C0F1;}
+.social-color12{fill:#F8F8F8;}
+.social-color13{fill:#0E458C;}
+.social-color14{fill:#1770E4;}
+.social-color15{fill:#F0F0F0;}
+.social-color16{fill:#555555;}
+.social-color17{fill:url(#f3_2_);}
+.social-color18{fill:url(#f2_2_);}
+.social-color19{fill:url(#f1_2_);}
+.social-color20{fill:url(#f1_6_);}
+.social-color21{fill:#F13F81;}
+
+/* ---------------------------TWITTER-------------------------
+---------------------------TWITTER-------------------------
+---------------------------TWITTER------------------------- */
+
+#tw-floor #tw-logo,
+#tw-floor #f1_1_,
+#tw-floor #f2_1_,
+#tw-floor #f3_1_,
+#social1 #tw-text{
+  transition: 0.3s ease-in-out;
+}
+#tw-floor:hover #tw-text{
+  transform: translate(0,-80px);
+}
+#tw-floor:hover #tw-logo{
+  transform: translate(0,-80px);
+}
+#tw-floor:hover #f1_1_{
+  transform: translate(0,-60px);
+  opacity: 0.7;
+}
+#tw-floor:hover #f2_1_{
+  transform: translate(0,-40px);
+  opacity: 0.5;
+}
+#tw-floor:hover #f3_1_{
+  transform: translate(0,-20px);
+  opacity: 0.2;
+}
+svg #social1{
+  animation-duration: 2s;
+  animation-name: tw;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes tw {
+  from{
+    transform: translate(0,-15px);
+  }
+}
+
+svg #social1 #shadow1{
+  animation-duration: 2s;
+  animation-name: shadow1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shadow1 {
+  from{
+    opacity: 0.7;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+/* ---------------------------FACEBOOK-------------------------
+---------------------------FACEBOOK-------------------------
+---------------------------FACEBOOK------------------------- */
+
+#fb-floor #fb-logo,
+#fb-floor #f1,
+#fb-floor #f2,
+#fb-floor #f3_4_,
+#fb-floor #fb-text{
+  transition: 0.3s ease-in-out;
+}
+#fb-floor:hover #fb-text{
+  transform: translate(0,-80px);
+}
+#fb-floor:hover #fb-logo{
+  transform: translate(0,-80px);
+}
+#fb-floor:hover #f1{
+  transform: translate(0,-60px);
+  opacity: 0.7;
+}
+#fb-floor:hover #f2{
+  transform: translate(0,-40px);
+  opacity: 0.5;
+}
+#fb-floor:hover #f3_4_{
+  transform: translate(0,-20px);
+  opacity: 0.2;
+}
+svg #social2{
+  animation-duration: 2s;
+  animation-name: fb;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes fb {
+  from{
+    transform: translate(0,-15px);
+  }
+}
+
+svg #shadow2{
+  animation-duration: 2s;
+  animation-name: shadow2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes shadow2 {
+  from{
+    opacity: 0.5;
+  }
+  to{
+    opacity: 0.8;
+  }
+}
+
+/* ---------------------------INSTAGRAM-------------------------
+---------------------------INSTAGRAM-------------------------
+---------------------------INSTAGRAM------------------------- */
+
+#instagram #in-logo_1_,
+#instagram #f1_4_,
+#instagram #f2_4_,
+#instagram #f3,
+#instagram #in-text{
+  transition: 0.3s ease-in-out;
+}
+#instagram:hover #in-text{
+  transform: translate(0,-80px);
+}
+#instagram #in-floor_1_:hover #in-logo_1_{
+  transform: translate(0,-80px);
+}
+#instagram #in-floor_1_:hover #f1_4_{
+  transform: translate(0,-60px);
+  opacity: 0.7;
+}
+#instagram #in-floor_1_:hover #f2_4_{
+  transform: translate(0,-40px);
+  opacity: 0.5;
+}
+#instagram #in-floor_1_:hover #f3{
+  transform: translate(0,-20px);
+  opacity: 0.2;
+}
+svg #social3{
+  animation-duration: 2s;
+  animation-name: in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes in {
+  from{
+    transform: translate(0,-15px);
+  }
+}
+
+svg #shadow3{
+  animation-duration: 2s;
+  animation-name: shadow2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes shadow2 {
+  from{
+    opacity: 0.3;
+  }
+  to{
+    opacity: 0.6;
+  }
+}
+
+/* ---------------------------LINKEDIN-------------------------
+---------------------------LINKEDIN-------------------------
+---------------------------LINKEDIN------------------------- */
+
+#li-floor #li-logo,
+#li-floor #f1_3_,
+#li-floor #f2_3_,
+#li-floor #f3_3_,
+#li-floor #li-text{
+  transition: 0.3s ease-in-out;
+}
+#li-floor:hover #li-text{
+  transform: translate(0,-80px);
+}
+#li-floor:hover #li-logo{
+  transform: translate(0,-80px);
+}
+#li-floor:hover #f1_3_{
+  transform: translate(0,-60px);
+  opacity: 0.7;
+}
+#li-floor:hover #f2_3_{
+  transform: translate(0,-40px);
+  opacity: 0.5;
+}
+#li-floor:hover #f3_3_{
+  transform: translate(0,-20px);
+  opacity: 0.2;
+}
+svg #social4{
+  animation-duration: 2s;
+  animation-name: li;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+}
+
+@keyframes li {
+  from{
+    transform: translate(0,-15px);
+  }
+}
+
+svg #shadow4{
+  animation-duration: 2s;
+  animation-name: shadow4;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+}
+
+@keyframes shadow4 {
+  from{
+    opacity: 0.1;
+  }
+  to{
+    opacity: 0.4;
   }
 }
