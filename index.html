@@ -43,6 +43,12 @@
         <span></span>
         <span></span>
       </button>
+      <div class="dropdown dropleft float-right">
+        <button type="button" class="dropbtn" data-toggle="dropdown" style="outline: none; border: none"><ion-icon name="language"></ion-icon></button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="index-vi.html">Vietnamese</a>
+        </div>
+      </div>
       <div class="navbar-collapse collapse" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -60,12 +66,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
-          <div class="dropdown dropleft float-right">
-            <button type="button" class="dropbtn" data-toggle="dropdown" ><ion-icon name="language"></ion-icon></button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="index-vi.html">Vietnamese</a>
-            </div>
-          </div>
         </ul>
       </div>
     </div>
@@ -6894,7 +6894,7 @@
       </div>
       <a href="#contact" class="contact-button js-scroll">COntact me</a>
       <div class="dark-mode-button">
-          <button onclick="myFunction()">dark mOde</button>
+          <button class="clickme" onclick="myFunction()">dark mOde</button>
       </div>
     </div>
   </div>
@@ -7260,7 +7260,7 @@
                     </h5>
                   </div>
                   <div class="social-iso">
-                    <svg class="social-iso" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="social-iso" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                        viewBox="0 0 780.09 550.47" style="enable-background:new 0 0 780.09 500;" xml:space="preserve">
                     <g id="BACKGROUND" class="social-color0">
                       <rect class="social-color1" width="750" height="500"/>
@@ -8858,7 +8858,7 @@
                         </g>
                       </a>
                     </g>
-                    </svg>
+                </svg>
                       <!-- <form action="" method="post" role="form" class="contactForm">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
@@ -8947,7 +8947,14 @@
   </section>
   <!--/ Section Contact-footer End /-->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <button type="button" class="dark dark-circle-button" onclick="myFunction()" style="outline: none; border: none" ><ion-icon name="moon"></ion-icon></button>
+  <script>
+  function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark");
+      }
+  </script>
+
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
@@ -8967,14 +8974,7 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
-  <script>
-  function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark");
-      }
-  </script>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
