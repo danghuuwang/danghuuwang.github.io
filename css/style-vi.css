@@ -475,46 +475,6 @@ a:hover {
   padding-left: 0;
 }
 
-.dark-mode-button button{
-  color: transparent;
-  background-color: transparent;
-  width: 265px;
-  display: block;
-  font-family: brawls;
-  border: 0px solid red;
-  font-size: 36px;
-  position: absolute;
-  top: 525px;
-  left: 1040px;
-  outline: 0;
-}
-
-.dark-mode-button button:hover,
-.dark-mode-button button:active{
-  color: transparent;
-  border: 0px;
-  style: none;
-  cursor: pointer;
-  outline: 0;
-}
-
-.contact-button{
-  color: transparent;
-  display: block;
-  width: 250px;
-  font-family: brawls;
-  border: 0px solid red;
-  font-size: 36px;
-  position: absolute;
-  top: 670px;
-  left: 1550px;
-}
-
-.contact-button:hover,
-.contact-button:active{
-  color: transparent;
-}
-
 .btn {
     min-width: 145px;
     line-height: 50px;
@@ -624,7 +584,6 @@ a:hover {
 }
 
 .navbar-b .navbar-brand {
-  margin-left: 10px;
   font-family: brawls;
   color: #242526;
   font-size: 2rem;
@@ -744,6 +703,11 @@ a:hover {
   height: 100%;
   width: 100%;
   opacity: .9;
+}
+
+.intro-content h1,
+.intro-content p{
+  visibility: hidden;
 }
 
 .intro .intro-title {
@@ -1547,6 +1511,14 @@ footer .credits a {
   color: #2c2c2c;
 }
 
+.dark .dark-circle-button{
+  background-color: #e1e1e1;
+}
+
+.dark .dark-circle-button ion-icon{
+  color: #2c2c2c;
+}
+
 .dark h1,
 .dark h2,
 .dark h3,
@@ -1733,652 +1705,72 @@ footer .credits a {
 /* -----------------ISOMETRIC---------------------------- */
 /* -----------------ISOMETRIC---------------------------- */
 
-.st0{opacity:0.2;fill:#202020;}
-.st1{fill:#4d4d4d;}
-.st2{fill:#4D4D4D;}
-.st3{fill:#E1E1E1;}
-.st4{fill:url(#SVGID_1_);}
-.st5{fill:#FEFEFE;}
-.st7{opacity:0.2;}
-.st16{fill:#858585;}
-.st17{fill:#FDFDFD;}
-.st18{fill:#fff;}
-.st19{fill:#8B8B8B;}
-.st20{fill:#EEEEEE;}
-
-.firstiso{
+.svgiso{
   width: 600px;
   margin: 0px 0px;
 }
-/* ----------------------------NAME--------------------------- */
-/* ----------------------------NAME--------------------------- */
-svg #name{
-  animation-duration: 01s;
-  animation-name: name;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0.2s
-}
 
-@keyframes name{
-  from{
-    transform: translateX(0px) translateY(0px);
-  }
-  to{
-    transform: translateX(12px) translateY(-12px);
-  }
-}
-/* ----------------------------NAME--------------------------- */
-
-
-/* ----------------------------PHONE-------------------------- */
-/* ----------------------------PHONE-------------------------- */
-svg #phone{
-  animation-duration: 01s;
-  animation-name: phone;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes phone{
-  from{
-    transform: translateX(0px) translateY(0px);
-  }
-  to{
-    transform: translateX(8px) translateY(-8px);
-  }
-}
-/* ----------------------------PHONE-------------------------- */
-
-
-/* ----------------------------ICON--------------------------- */
-/* ----------------------------ICON--------------------------- */
-svg #icon1{
-  animation-duration: 2s;
-  animation-name: icon1;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0s;
-  fill: #e1e1e1;
-}
-@keyframes icon1{
-  from{}
-  to{
-    fill: #ff4d4d;
-  }
-}
-
-svg #icon2{
-  animation-duration: 2s;
-  animation-name: icon2;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0.5s;
-  fill: #e1e1e1;
-}
-@keyframes icon2{
-  from{}
-  to{
-    fill: #fffa65;
-  }
-}
-
-svg #icon3{
-  animation-duration: 2s;
-  animation-name: icon3;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 1s;
-  fill: #e1e1e1;
-}
-@keyframes icon3{
-  from{}
-  to{
-    fill: #18dcff;
-  }
-}
-
-svg #icon4{
-  animation-duration: 2s;
-  animation-name: icon4;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 1.5s;
-  fill: #e1e1e1;
-}
-@keyframes icon4{
-  from{}
-  to{
-    fill: #CD84F1;
-  }
-}
-
-svg #icon5{
-  animation-duration: 2s;
-  animation-name: icon5;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 2s;
-  fill: #e1e1e1;
-}
-@keyframes icon5{
-  from{}
-  to{
-    fill: #32FF7E;
-  }
-}
-
-svg #icon6{
-  animation-duration: 2s;
-  animation-name: icon6;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 2.5s;
-  fill: #e1e1e1;
-}
-@keyframes icon6{
-  from{}
-  to{
-    fill: #FFAF40;
-  }
-}
-
-svg .st9{
-  animation-duration: 2s;
-  animation-name: icon7;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 3s;
-  fill: #e1e1e1;
-}
-@keyframes icon7{
-  from{}
-  to{
-    fill: #FFCCCC;
-  }
-}
-
-svg #icon8{
-  animation-duration: 2s;
-  animation-name: icon8;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 3.5s;
-  fill: #e1e1e1;
-}
-@keyframes icon8{
-  from{}
-  to{
-    fill: #7D5FFF;
-  }
-}
-
-svg #icon9{
-  animation-duration: 2s;
-  animation-name: icon9;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 4s;
-  fill: #e1e1e1;
-}
-@keyframes icon9{
-  from{}
-  to{
-    fill: #dcdcdc;
-  }
-}
-/* ----------------------------ICON--------------------------- */
-
-
-/* ----------------------------BUTTON------------------------- */
-/* ----------------------------BUTTON------------------------- */
-svg .design-scale{
-  animation-duration: 20s;
-  animation-name: design-scale;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  transform-origin: bottom;
-}
-@keyframes design-scale{
-  0% {transform: scale(1);}
-  5% {transform: scale(1.2);}
-  20% {transform: scale(1.2);}
-  25% {transform: scale(1);}
-  100% {transform: scale(1);}
-}
-
-svg #design .st17{
-  animation-duration: 20s;
-  animation-name: design-fill-icon;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes design-fill-icon{
-  0% {fill: #fff;}
-  5% {fill: black;}
-  20% {fill: black;}
-  25% {fill: #fff;}
-  100% {fill: #fff;}
-}
-
-svg #design #black_5_{
-  animation-duration: 20s;
-  animation-name: design-fill-bg;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes design-fill-bg{
-  0% {fill: black;}
-  5% {fill: #fff;}
-  20% {fill: #fff;}
-  25% {fill: black;}
-  100% {fill: black;}
-}
-
-svg #design{
-  animation-duration: 1s;
-  animation-name: design-translate;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0s;
-}
-@keyframes design-translate{
-  from{
-    transform: translateX(0px) translateY(0px);
-  }
-  to{
-    transform: translateX(20px) translateY(-20px);
-  }
-}
-
-
-
-
-svg .video-scale{
-  animation-duration: 20s;
-  animation-name: video-scale;
-  animation-iteration-count: infinite;
-  animation-delay: 7s;
-  transform-origin: bottom;
-}
-@keyframes video-scale{
-  0% {transform: scale(1);}
-  5% {transform: scale(1.2);}
-  20% {transform: scale(1.2);}
-  25% {transform: scale(1);}
-  100% {transform: scale(1);}
-}
-
-svg #video .st17{
-  animation-duration: 20s;
-  animation-name: video-fill-icon;
-  animation-iteration-count: infinite;
-  animation-delay: 7s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes video-fill-icon{
-  0% {fill: #fff;}
-  5% {fill: black;}
-  20% {fill: black;}
-  25% {fill: #fff;}
-  100% {fill: #fff;}
-}
-
-svg #video #black_6_{
-  animation-duration: 20s;
-  animation-name: video-fill-bg;
-  animation-iteration-count: infinite;
-  animation-delay: 7s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes video-fill-bg{
-  0% {fill: black;}
-  5% {fill: #fff;}
-  20% {fill: #fff;}
-  25% {fill: black;}
-  100% {fill: black;}
-}
-
-svg #video{
-  animation-duration: 1s;
-  animation-name: video;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0s;
-}
-@keyframes video{
-  from{
-    transform: translateX(0px) translateY(0px);
-  }
-  to{
-    transform: translateX(27px) translateY(-27px);
-  }
-}
-
-
-
-
-svg .web-scale{
-  animation-duration: 20s;
-  animation-name: web-scale;
-  animation-iteration-count: infinite;
-  animation-delay: 12s;
-  transform-origin: bottom;
-}
-@keyframes web-scale{
-  0% {transform: scale(1);}
-  5% {transform: scale(1.2);}
-  20% {transform: scale(1.2);}
-  25% {transform: scale(1);}
-  100% {transform: scale(1);}
-}
-
-svg #web .st17{
-  animation-duration: 20s;
-  animation-name: web-fill-icon;
-  animation-iteration-count: infinite;
-  animation-delay: 12s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes web-fill-icon{
-  0% {fill: #fff;}
-  5% {fill: black;}
-  20% {fill: black;}
-  25% {fill: #fff;}
-  100% {fill: #fff;}
-}
-
-svg #web #black_8_{
-  animation-duration: 20s;
-  animation-name: web-fill-bg;
-  animation-iteration-count: infinite;
-  animation-delay: 12s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes web-fill-bg{
-  0% {fill: black;}
-  5% {fill: #fff;}
-  20% {fill: #fff;}
-  25% {fill: black;}
-  100% {fill: black;}
-}
-
-svg #web{
-  animation-duration: 1s;
-  animation-name: web;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0.1s;
-}
-@keyframes web{
-  from{
-    transform: translateX(0px) translateY(0px);
-  }
-  to{
-    transform: translateX(15px) translateY(-15px);
-  }
-}
-
-
-
-
-svg .idea-scale{
-  animation-duration: 20s;
-  animation-name: idea-scale;
-  animation-iteration-count: infinite;
-  animation-delay: 17s;
-  transform-origin: bottom;
-}
-@keyframes idea-scale{
-  0% {transform: scale(1);}
-  5% {transform: scale(1.2);}
-  20% {transform: scale(1.2);}
-  25% {transform: scale(1);}
-  100% {transform: scale(1);}
-}
-
-svg #idea .st17{
-  animation-duration: 20s;
-  animation-name: idea-fill-icon;
-  animation-iteration-count: infinite;
-  animation-delay: 17s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes idea-fill-icon{
-  0% {fill: #fff;}
-  5% {fill: black;}
-  20% {fill: black;}
-  25% {fill: #fff;}
-  100% {fill: #fff;}
-}
-
-svg #idea #black_7_{
-  animation-duration: 20s;
-  animation-name: idea-fill-bg;
-  animation-iteration-count: infinite;
-  animation-delay: 17s;
-  transform-origin: bottom;
-  transition: 1s ease;
-}
-@keyframes idea-fill-bg{
-  0% {fill: black;}
-  5% {fill: #fff;}
-  20% {fill: #fff;}
-  25% {fill: black;}
-  100% {fill: black;}
-}
-
-svg #idea{
-  animation-duration: 1s;
-  animation-name: idea;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: 0.05s;
-}
-@keyframes idea{
-  from{
-    transform: translateX(0px) translateY(0px);
-  }
-  to{
-    transform: translateX(25px) translateY(-25px);
-  }
-}
-/* ----------------------------BUTTON------------------------- */
-
-
-/* -------------------------AUTOMATIC------------------------- */
-/* -------------------------AUTOMATIC------------------------- */
-
-svg #designer{
-  animation-duration: 20s;
-  animation-name: designer;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  opacity: 0;
-}
-@keyframes designer{
-  0%  {
-    transform: translateX(0px) translateY(0px);
-  }
-  5% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  25% {
-    opacity: 0;
-    transform: translateX(0px) translateY(50px);
-  }
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-}
-
-svg #editor{
-  animation-duration: 20s;
-  animation-name: editor;
-  animation-iteration-count: infinite;
-  animation-delay: 7s;
-  opacity: 0;
-}
-@keyframes editor{
-  0%  {
-    transform: translateX(0px) translateY(0px);
-  }
-  5% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  25% {
-    opacity: 0;
-    transform: translateX(0px) translateY(50px);
-  }
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-}
-
-svg #web-des{
-  animation-duration: 20s;
-  animation-name: web-des;
-  animation-iteration-count: infinite;
-  animation-delay: 12s;
-  opacity: 0;
-}
-@keyframes web-des{
-  0%  {
-    transform: translateX(0px) translateY(0px);
-  }
-  5% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  25% {
-    opacity: 0;
-    transform: translateX(0px) translateY(50px);
-  }
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-}
-
-svg #creator{
-  animation-duration: 20s;
-  animation-name: editor;
-  animation-iteration-count: infinite;
-  animation-delay: 17s;
-  opacity: 0;
-}
-@keyframes editor{
-  0%  {
-    transform: translateX(0px) translateY(0px);
-  }
-  5% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(0px) translateY(50px);
-  }
-  25% {
-    opacity: 0;
-    transform: translateX(0px) translateY(50px);
-  }
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-}
-
-/* -----------------ISOMETRIC 2---------------------------- */
-/* -----------------ISOMETRIC 2---------------------------- */
-/* -----------------ISOMETRIC 2---------------------------- */
-
-.secondiso{
-  position: absolute;
-  top: -47px;
-  left: 176px;
-  width: 600px;
-  margin: 0px 0px;
-  visibility: hidden;
-}
-
-.std0{fill:#6F7178;}
-.std1{fill:#E4E9F8;}
-.std2{fill:#B5B9C5;}
-.std3{fill:#F4971F;}
-.std4{opacity:0.15;fill:#FFFFFF;}
-.std5{fill:#FCC640;}
-.std6{fill:#FFFFFF;}
-.std7{fill:url(#SVGID_1_);}
-.std8{fill:url(#SVGID_2_);}
-.std9{fill:url(#SVGID_3_);}
-.std10{fill:url(#SVGID_4_);}
-.std11{fill:url(#SVGID_5_);}
-.std12{fill:url(#SVGID_6_);}
-.std13{fill:#8B8B8B;}
-.std14{fill:url(#SVGID_7_);}
-.std15{fill:url(#SVGID_8_);}
-.std16{fill:url(#SVGID_9_);}
-.std17{fill:url(#SVGID_10_);}
-.std18{fill:url(#SVGID_11_);}
-.std19{fill:url(#SVGID_12_);}
-.std20{fill:url(#SVGID_13_);}
-.std21{fill:url(#SVGID_14_);}
-.std22{fill:url(#SVGID_15_);}
-.std23{fill:url(#SVGID_16_);}
-.std24{fill:url(#SVGID_17_);}
-.std25{fill:url(#SVGID_18_);}
-.std26{fill:url(#SVGID_19_);}
-.std27{fill:url(#SVGID_20_);}
-.std28{fill:url(#SVGID_21_);}
-.std29{fill:url(#SVGID_22_);}
-.std30{fill:url(#SVGID_23_);}
-.std31{fill:url(#SVGID_24_);}
-.std32{fill:url(#SVGID_25_);}
-.std33{opacity:0.33;fill:#202020;}
-.std34{fill:url(#SVGID_26_);}
-.std35{fill:#E1E1E1;}
-.std36{fill:url(#SVGID_27_);}
-.std37{fill:url(#SVGID_28_);}
-.std38{fill:#FEFEFE;}
-.std40{opacity:0.15;}
-.std49{fill:url(#SVGID_29_);}
-.std50{fill:url(#SVGID_30_);}
-.std51{fill:url(#SVGID_31_);}
-.std52{fill:#707070;}
-.std53{fill:#858585;}
-.std54{fill:url(#SVGID_32_);}
-.std55{fill:url(#SVGID_33_);}
-.std56{fill:url(#SVGID_34_);}
-.std57{fill:url(#SVGID_35_);}
-.std58{fill:#FFF9FF;}
-.std59{fill:#D3BAE7;}
-.std60{fill:#752939;}
-.std61{fill:#BCBACE;}
-.std62{fill:#1A685A;}
-.std63{fill:#409682;}
-.std64{fill:#4EAF9D;}
+.st0{fill:#FFF9FF;}
+.st1{fill:#D3BAE7;}
+.st2{fill:#752939;}
+.st3{fill:#BCBACE;}
+.st4{fill:#1A685A;}
+.st5{fill:#409682;}
+.st6{fill:#4EAF9D;}
+.st7{fill:#6F7178;}
+.st8{fill:#E4E9F8;}
+.st9{fill:#B5B9C5;}
+.st10{fill:url(#SVGID_1_);visibility: hidden;}
+.dark .st10{visibility: visible;}
+.st11{fill:#F4971F;}
+.st12{opacity:0.15;fill:#FFFFFF;}
+.st13{fill:#FCC640;}
+.st14{fill:#FFFFFF;}
+.st15{fill:url(#SVGID_2_);}
+.st16{fill:url(#SVGID_3_);}
+.st17{fill:url(#SVGID_4_);}
+.st18{fill:url(#SVGID_5_);}
+.st19{fill:url(#SVGID_6_);}
+.st20{fill:url(#SVGID_7_);}
+.st21{fill:#8B8B8B;}
+.st22{fill:url(#SVGID_8_);}
+.st23{fill:url(#SVGID_9_);}
+.st24{fill:url(#SVGID_10_);}
+.st25{fill:url(#SVGID_11_);}
+.st26{fill:url(#SVGID_12_);}
+.st27{fill:url(#SVGID_13_);}
+.st28{fill:url(#SVGID_14_);}
+.st29{fill:url(#SVGID_15_);}
+.st30{fill:url(#SVGID_16_);}
+.st31{fill:url(#SVGID_17_);}
+.st32{fill:url(#SVGID_18_);}
+.st33{fill:url(#SVGID_19_);}
+.st34{fill:url(#SVGID_20_);}
+.st35{fill:url(#SVGID_21_);}
+.st36{fill:url(#SVGID_22_);}
+.st37{fill:url(#SVGID_23_);}
+.st38{fill:url(#SVGID_24_);}
+.st39{fill:url(#SVGID_25_);}
+.st40{fill:url(#SVGID_26_);}
+.st41{opacity:0.33;fill:#202020;}
+.dark .st41{opacity:0;fill:#202020;}
+.dark .st42{fill:#1a1a1a;}
+.st42{fill:#4d4d4d;}
+.st43{fill:#E1E1E1;}
+.dark .st44{fill:#1a1a1a;}
+.st44{fill:#4d4d4d;}
+.st45{fill:url(#SVGID_29_);}
+.st46{fill:#FEFEFE;}
+.st48{opacity:0.15;}
+.st57{fill:url(#SVGID_30_);}
+.st58{fill:url(#SVGID_31_);}
+.st59{fill:url(#SVGID_32_);}
+.st60{fill:#707070;}
+.st61{fill:#858585;}
+.st62{fill:url(#SVGID_33_);}
+.st63{fill:url(#SVGID_34_);}
+.st64{fill:url(#SVGID_35_);}
+.st65{fill:url(#SVGID_36_);}
 
 svg{
   width: 700px;
@@ -2391,7 +1783,7 @@ svg #named{
   animation-name: named;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-delay: 0.2s
+  animation-delay: 0.2s;
 }
 
 @keyframes named{
@@ -2409,7 +1801,7 @@ svg #named{
 /* ----------------------------PHONE-------------------------- */
 svg #phoned{
   animation-duration: 01s;
-  animation-name: phone;
+  animation-name: phoned;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -2581,7 +1973,7 @@ svg .designd-scale{
   100% {transform: scale(1);}
 }
 
-svg #designd .std6{
+svg #designd .st14{
   animation-duration: 20s;
   animation-name: designd-fill-icon;
   animation-iteration-count: infinite;
@@ -2597,7 +1989,7 @@ svg #designd .std6{
   100% {fill: #fff;}
 }
 
-svg #designd .std54, .std55{
+svg #designd .st62, .st63{
   animation-duration: 20s;
   animation-name: designd-fill-bg;
   animation-iteration-count: infinite;
@@ -2647,7 +2039,7 @@ svg .videod-scale{
   100% {transform: scale(1);}
 }
 
-svg #videod .std6{
+svg #videod .st14{
   animation-duration: 20s;
   animation-name: videod-fill-icon;
   animation-iteration-count: infinite;
@@ -2663,7 +2055,7 @@ svg #videod .std6{
   100% {fill: #fff;}
 }
 
-svg #videod .std56, .std57{
+svg #videod .st64, .st65{
   animation-duration: 20s;
   animation-name: videod-fill-bg;
   animation-iteration-count: infinite;
@@ -2713,7 +2105,7 @@ svg .webd-scale{
   100% {transform: scale(1);}
 }
 
-svg #webd .std6{
+svg #webd .st14{
   animation-duration: 20s;
   animation-name: webd-fill-icon;
   animation-iteration-count: infinite;
@@ -2779,7 +2171,7 @@ svg .idead-scale{
   100% {transform: scale(1);}
 }
 
-svg #idead .std6{
+svg #idead .st14{
   animation-duration: 20s;
   animation-name: idead-fill-icon;
   animation-iteration-count: infinite;
@@ -2918,12 +2310,12 @@ svg #web-desd{
 
 svg #creatord{
   animation-duration: 20s;
-  animation-name: editord;
+  animation-name: creatord;
   animation-iteration-count: infinite;
   animation-delay: 17s;
   opacity: 0;
 }
-@keyframes editord{
+@keyframes creatord{
   0%  {
     transform: translateX(0px) translateY(0px);
   }
@@ -3228,5 +2620,172 @@ svg #shadow4{
   }
   to{
     opacity: 0.4;
+  }
+}
+
+/* ------------------RESPONSIVE-----------------------
+------------------RESPONSIVE-----------------------
+------------------RESPONSIVE----------------------- */
+@media only screen and (max-width: 1680px){
+  .navbar-brand{
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1680px){
+  .navbar-collapse ul{
+    margin-left: 420px;
+  }
+  .navbar-brand{
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 1366px){
+  .navbar-collapse ul{
+    margin-left: 290px;
+  }
+  .navbar-brand{
+    margin-left: 140px;
+  }
+  .navbar a{
+    font-size: 13px;
+  }
+  .svgiso{
+    width: 400px;
+  }
+  .dropdown{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1360px){
+  .navbar-collapse ul{
+    margin-left: 290px;
+  }
+  .navbar-brand{
+    margin-left: 140px;
+  }
+  .navbar a{
+    font-size: 13px;
+  }
+  .svgiso{
+    width: 400px;
+  }
+  .dropdown{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1280px){
+  .navbar-collapse ul{
+    margin-left: 235px;
+  }
+  .navbar-brand{
+    margin-left: 170px;
+  }
+  .navbar a{
+    font-size: 13px;
+  }
+  .svgiso{
+    width: 400px;
+  }
+  .dropdown{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .navbar-collapse ul{
+    margin-left: 150px;
+  }
+  .navbar-brand{
+    margin-left: 0px;
+  }
+  .navbar a{
+    font-size: 12px;
+  }
+  .navbar-b.navbar-trans .nav-item,
+  .navbar-b.navbar-reduce .nav-item{
+    padding-right: 0px;
+  }
+  .svgiso{
+    width: 400px;
+  }
+  .dropdown{
+    visibility: hidden;
+  }
+  .intro{
+    height: 80vh;
+  }
+  .social-iso{
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .navbar-collapse ul{
+    margin-left: 0px;
+    visibility: hidden;
+  }
+  .navbar-brand{
+    margin-left: 0px;
+  }
+  .navbar a{
+    font-size: 10px;
+  }
+  .navbar-b.navbar-trans .nav-item,
+  .navbar-b.navbar-reduce .nav-item{
+    padding-right: 0px;
+  }
+  .svgiso{
+    position: absolute;
+    top: -120px;
+    left: 35px;
+    width: 350px;
+  }
+  .dropdown{
+    visibility: visible;
+  }
+  .social-iso{
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .navbar-collapse ul{
+    margin-left: 0px;
+  }
+  .navbar-brand{
+    margin-left: 0px;
+  }
+  .navbar a{
+    font-size: 15px;
+  }
+  .svgiso{
+    visibility: hidden;
+  }
+  .intro-content h1,
+  .intro-content p{
+    position: relative;
+    top: 500px;
+    visibility: visible;
+
+  }
+  .bg-image1{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 30%, #f5f5f5), url('../img/bg-re.jpg');
+  }
+  .dark .bg-image1{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #181818), url('../img/bg-red.jpg');
+  }
+  .dark .st10{
+    visibility: hidden;
+  }
+  .social-hidden{
+    position: absolute;
+    visibility: hidden;
+  }
+  .navbar-toggler{
+    visibility: hidden;
   }
 }
