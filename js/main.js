@@ -38,24 +38,20 @@
     }
   });
 
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
-  });
-
+ //Language dropdown
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
 			$('.dropdown').fadeIn('slow');
 		} else {
 			$('.dropdown').fadeOut('slow');
+		}
+	});
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$('.dark-circle-button').fadeIn('slow');
+		} else {
+			$('.dark-circle-button').fadeOut('slow');
 		}
 	});
 
