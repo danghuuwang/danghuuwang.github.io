@@ -1,0 +1,236 @@
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+  transition: 01s ease;
+  cursor: url('../mouse/normal-select-blue.cur'), auto;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+html,body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'brawls';
+  src: url('../font/brawls.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-image1 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 30%, #f5f5f5), url('../img/bg-lang.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: 0.5s ease;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  color: #242526;
+  transition: 0.5s ease;
+}
+
+.service-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 50%;
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 7rem;
+  transition: 0.5s ease;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.2)
+}
+
+.service-content{
+  text-align: center;
+}
+
+.service-content h2{
+  font-family: brawls;
+}
+
+.service-content p{
+  font-size: 20px;
+}
+
+.btn {
+    min-width: 145px;
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 05px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.btn-fill {
+  margin-top: 10px;
+    color: #1e1e1e;
+    background-color: #e1e1e1;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: all 0.5s ease;
+}
+
+.btn-fill:hover,
+.btn-fill:focus {
+    color: #1e1e1e;
+    background-color: #b1b1b1;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.08);
+}
+
+.modal-image {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #1e1e1e;
+  padding: 11px 10px 2px;
+  margin-bottom: 2em;
+}
+
+.modal-image ion-icon{
+  font-size: 21px;
+  text-align: center;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #242526;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ------------------RESPONSIVE-----------------------
+------------------RESPONSIVE-----------------------
+------------------RESPONSIVE----------------------- */
+
+@media only screen and (max-width: 1280px){
+  .service-content p{
+    font-size: 17px;
+  }
+  .btn{
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 120px;
+    line-height: 50px;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .service-box{
+    width: 60%;
+  }
+  .service-content p{
+    font-size: 17px;
+  }
+  .btn{
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 100px;
+    line-height: 50px;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .service-box{
+    width: 80%;
+  }
+  .service-content p{
+    font-size: 17px;
+  }
+  .btn{
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 120px;
+    line-height: 50px;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .service-box{
+    width: 80%;
+  }
+  .bg-image1{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 30%, #f5f5f5), url('../img/bg-re.jpg');
+  }
+}
+
+@media only screen and (max-width:374px){
+  .service-box{
+    width: 90%;
+  }
+}
+
+  @media only screen and (max-width:320px){
+    .service-box{
+      width: 90%;
+      transform: translate(-50%, 30%);
+    }
+    .btn{
+      font-size: 14px;
+      font-weight: 500;
+      min-width: 100px;
+      line-height: 50px;
+      padding: 0 20px;
+    }
+}
